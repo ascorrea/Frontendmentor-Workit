@@ -1,0 +1,22 @@
+---
+interface Props {
+    href: string;
+}
+
+const {href} = Astro.props;
+---
+
+<a class="link-social" href={href} target="_blank">
+    <slot />
+</a>
+
+<style>
+    .link-social{
+        display: inline-block;
+        width: 1.25rem;
+        color: var(--davys-grey);
+    }
+    .link-social:hover{
+           color: var(--dark-purple);
+        }
+</style>

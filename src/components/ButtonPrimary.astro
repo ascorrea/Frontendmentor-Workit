@@ -1,0 +1,44 @@
+---
+
+interface Props {
+    href: string;
+    title: string;
+}
+
+const { href,title} = Astro.props;
+---
+
+
+<a class="button" href={href}>
+    {title}
+</a>
+
+<style>
+    .button {
+        display: inline-block;
+        text-align: center;
+        width: 11.875rem;
+        height: 3.8125rem;
+        background-color: var(--background-primary-default);
+        color: var(--text-primary-default);
+        border: 2px solid var(--background-primary-default);
+        font-family: var(--font-button);
+        font-size: var(--text-button);
+        font-weight: var(--weight-button);
+        line-height: 3.8125rem ;
+        letter-spacing: var(--letter-spacing-button);
+        transition: color 200ms, background-color 100ms;
+        
+        &:hover{
+            background-color: var(--background-primary-hover);
+            color: var(--text-primary-hover);
+        }
+    }
+    @media (max-width: 768px) {
+        .button {
+        width: 10.75rem;
+        height: 3.4375rem;
+        line-height: 3.4375rem ;
+    }
+    
+</style>

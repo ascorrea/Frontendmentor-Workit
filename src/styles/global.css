@@ -1,0 +1,170 @@
+
+/*Global Fonts*/
+@font-face {
+	font-family:"Fraunces 144";
+	src: url(../public/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+	font-display: swap;
+}
+@font-face {
+	font-family: "Manrope";
+	src: url(../public/fonts/manrope/Manrope-VariableFont_wght.ttf);
+	font-display: swap;
+}
+
+/* Global variables */
+:root {
+	/* Colors */
+	--dark-purple: #24053E;
+	--eucaplyptus: #44FFA1;
+	--davys-grey: #584D62;
+	--ghost-white: #FCF8FF;
+	--white: #FFFFFF;
+
+	/*Colors Button primary*/
+	--background-primary-default: var(--eucaplyptus);
+	--text-primary-default:var(--dark-purple);
+	--background-primary-hover: var(--dark-purple);
+	--text-primary-hover:var(--eucaplyptus);
+	--background-border-primary-hover:var(--eucaplyptus);
+
+	/*Color Button Secundary*/
+	--background-line-secondary-default: var(--eucaplyptus);
+	--text-secondary-default: var(--white);
+	--text-secondary-hover: var(--eucaplyptus);
+
+	/* Text Sizes */
+	--heading-l: 5rem;
+	--heading-m: 3.5rem;
+	--heading-s: 2rem;
+	--body: 1.125rem;
+	--text-button: var(--body);
+
+	/* Fonts */
+	--font-title: "Fraunces 144";
+	--font-body: "Manrope";
+	--font-button: var(--font-body);
+
+	/*Weight Font*/
+	--weight-title: 600;
+	--weight-body: 400;
+	--weight-button: 700;
+
+	/*Line Height*/
+	--line-height-heading-l: 5rem;
+	--line-height-heading-m: 4rem;
+	--line-height-heading-s: 2.5rem;
+	--line-height-body: 2rem;
+	--line-height-button: 2rem;
+
+	/*Letter Spacing*/
+	--letter-spacing-button: -0.0112rem;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	scroll-behavior: smooth;
+	background-color: var(--white);
+	overflow-x: hidden;
+}
+
+body {
+	color: var(--dark-purple);
+	-webkit-font-smoothing: antialiased;
+}
+header,section,footer{
+	padding: 0 124px;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3
+{
+	font-family: var(--font-title);
+	font-weight: var(--weight-title);
+}
+
+h1 {
+	font-size: var(--heading-l);
+	line-height: var(--line-height-heading-l);
+	color: var(--white);
+}
+
+h2 {
+	font-size: var(--heading-m);
+	line-height: var(--line-height-heading-m);
+	color: var(--white);
+}
+
+h3 {
+	font-size: var(--heading-s);
+	line-height: var(--line-height-heading-s);
+	color: var(--dark-purple);
+}
+
+p{
+	font-family: var(--font-body);
+	font-size: var(--body);
+	font-weight: var(--weight-body);
+	line-height: var(--line-height-body);
+	color: var(--davys-grey);
+}
+
+@media (max-width: 768px) {
+
+	:root{
+		/* Text Sizes */
+		--heading-l: 3.75rem;
+		--heading-m: 3rem;
+		--heading-s: 1.75rem;
+		--body: 1rem;
+		--text-button: var(--body);
+
+		/*Line Height*/
+		--line-height-heading-l: 3.75rem;
+		--line-height-heading-m: 3.5rem;
+		--line-height-heading-s: 2.25rem;
+		--line-height-body: 1.75rem;
+		--line-height-button: 2rem;
+
+		/*Letter Spacing*/
+		--letter-spacing-button: -0.01rem;
+	}
+	header,section,footer{
+		padding: 0 40px;
+	}
+}
+
+@media (max-width: 375px) {
+
+	:root{
+		/* Text Sizes */
+		--heading-l: 3.125rem;
+		--heading-m: 2rem;
+		--heading-s: 1.75rem;
+		--body: 1rem;
+		--text-button: var(--body);
+
+		/*Line Height*/
+		--line-height-heading-l: 3.125rem;
+		--line-height-heading-m: 48px;
+		--line-height-heading-s: 2.25rem;
+		--line-height-body: 1.75rem;
+		--line-height-button: 2rem;
+
+		/*Letter Spacing*/
+		--letter-spacing-button: -0.01rem;
+	}
+	header,section,footer{
+		padding: 0 1rem;
+	}
+}
