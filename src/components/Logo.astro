@@ -1,17 +1,17 @@
 ---
 interface Props {
-	pathLogo: string;
-	altLogo:string;
+  pathLogo: string;
+  altLogo: string;
 }
 
-const { pathLogo,altLogo } = Astro.props;
+const { pathLogo, altLogo } = Astro.props;
 ---
 
-<img class="logo" src={pathLogo} alt={altLogo}>
+<img class="logo" src={pathLogo} alt={altLogo} />
 
 <style>
-    .logo{
-        display: inline-block;
-        width: 96px;
-    }
+  .logo {
+    display: inline-block;
+    width: 96px;
+  }
 </style>
