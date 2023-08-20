@@ -20,20 +20,20 @@ const { title } = Astro.props;
     <link
       rel="icon"
       type="image/png+xml"
-      href="../../public/assets/favicon-32x32.png"
+      href="/assets/favicon-32x32.png"
     />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
   <body>
     <header class="header">
-      <Logo pathLogo="../../public/assets/logo-light.svg" altLogo="Logo" />
+      <Logo pathLogo="/assets/logo-light.svg" altLogo="Logo" />
       <ButtonSecondary href="#" title="Apply for access" />
     </header>
     <slot />
     <footer class="footer">
       <div class="footer_content">
-        <Logo pathLogo="../../public/assets/logo-dark.svg" altLogo="Logo" />
+        <Logo pathLogo="/assets/logo-dark.svg" altLogo="Logo" />
         <div class="container-red-social">
           <RedSocial href="https://es-la.facebook.com/">
             <svg
