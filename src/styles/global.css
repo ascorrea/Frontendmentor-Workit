@@ -145,7 +145,7 @@ p {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 480px) {
   :root {
     /* Text Sizes */
     --heading-l: 3.125rem;
