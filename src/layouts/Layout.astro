@@ -27,15 +27,15 @@ const { title } = Astro.props;
   </head>
   <body>
     <header class="header">
-      <Logo pathLogo="/assets/logo-light.svg" altLogo="Logo" />
+      <Logo pathLogo="/assets/logo-light.svg" altLogo="Logo workit" />
       <ButtonSecondary href="#" title="Apply for access" />
     </header>
     <slot />
     <footer class="footer">
       <div class="footer_content">
-        <Logo pathLogo="/assets/logo-dark.svg" altLogo="Logo" />
+        <Logo pathLogo="/assets/logo-dark.svg" altLogo="Logo workit" />
         <div class="container-red-social">
-          <RedSocial href="https://es-la.facebook.com/">
+          <RedSocial href="https://es-la.facebook.com/" description="Visitanos en nuestra p+agina de facebook" >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -47,7 +47,7 @@ const { title } = Astro.props;
               ></path></svg
             >
           </RedSocial>
-          <RedSocial href="https://es-la.facebook.com/">
+          <RedSocial href="https://twitter.com/" description="Visitanos en nuestra p+agina de twiter" >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -59,7 +59,7 @@ const { title } = Astro.props;
               ></path></svg
             >
           </RedSocial>
-          <RedSocial href="https://es-la.facebook.com/">
+          <RedSocial href="https://www.instagram.com/" description="Visitanos en nuestra p+agina de instagram">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
